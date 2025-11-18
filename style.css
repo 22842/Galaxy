@@ -1,0 +1,51 @@
+let team1 = document.querySelector('.team1')
+let team2 = document.querySelector('.team2')
+let team3 = document.querySelector('.team3')
+let height = Math.max(parseInt(getComputedStyle(team1).getPropertyValue('height')), parseInt(getComputedStyle(team2).getPropertyValue('height')), parseInt(getComputedStyle(team3).getPropertyValue('height')))
+team1.style.height = `${height}px`
+team2.style.height = `${height}px`
+team3.style.height = `${height}px`
+
+// Функція, яку потрібно викликати при кліці на стрілку
+function scrollDown() {
+    window.scrollTo({top: window.innerHeight, behavior: 'smooth' });
+}
+
+// Виправ помилки, допущені під час обробки події
+let button = document.querySelector('.arrow-next')
+button.addEventListener('click', scrollDown)
+
+function change_theme() {
+   let header = document.querySelector('header')
+   header.style.background = 'url(/uploads/2022/11/bg_space.png)'
+   header.style.backgroundSize = 'cover'
+}
+
+let button2 = document.querySelector(' .switch-theme-button')
+button2.addEventListener('click', change_theme)
+
+
+function calc_flight() {
+    let days = document.querySelector('.days-input').vaule;
+    let checked_price = document.querySelector('.submit-select').vaule;
+
+    alert(3000*30)
+}
+ 
+ let button3 = document.querySelector('.submit-btn-calc');
+ if (button3) {
+    button3.addEventListener("click", calc_flight);
+ }
+
+function make_transparent() {
+    send_btn.style.backgroundColor = 'transparent'
+}
+
+function make_colorful() {
+    send_btn.style.backgroundColor = '#C2AB99'
+}
+
+let send_btn = document.querySelector('.submit-btn-send')
+
+send_btn.addEventListener('mouseover', make_transparent)
+send_btn.addEventListener('mouseout', make_colorful)

@@ -12,7 +12,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: url('/uploads/2022/11/bg_mars.png');
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fspace%2Fcomments%2F1d1osk3%2Fmars_surface_contains_more_organic_matter_than%2F&psig=AOvVaw1xnWNXRRisNfsci8co_rwI&ust=1764168967839000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNiyn-HHjZEDFQAAAAAdAAAAABAL');
     background-size: cover;
     background-position: center center; 
     display: flex;
